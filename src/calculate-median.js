@@ -5,7 +5,7 @@ function calculate_median(arr) {
 	  evenArray[j]=arr[i];	     
 	  }
   evenArray.sort(); 
-  var half=(evenArray.length)/2;
+  var half=Math.floor((evenArray.length)/2);
   return (evenArray.length)%2==0? (evenArray[half-1]+evenArray[half])/2: evenArray[half];   
 }
 
